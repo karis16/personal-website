@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kári Jón Sigurðsson">
+
+    <!--Font import-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <!--Icon import-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--Favicon import-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Kári Jón Sigurðsson</title>
+</head>
+<body>
+
+    <main id="main-section">
+        <div id="home" class="section"> <!--Er bara að búa til "function" fyrir home og bý sýðan til fleirri t.d. about.-->
+            <h1>Kári Jón <span class="emphasis">Sigurðsson</span> </h1>
+            <p>Aspiring engineer and experienced project manager.</p>
+            
+            <a href="https://www.linkedin.com/in/k%C3%A1ri-j%C3%B3n-sigur%C3%B0sson-a3b3621ab/" class="fa fa-linkedin fa-4x icon-link" target="_blank"></a>
+            <a href="https://www.instagram.com/karisigsson/" class="fa fa-instagram fa-4x icon-link" target="_blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=1142591594" class="fa fa-facebook-square fa-4x icon-link" target="_blank"></a>
+        </div>
+
+
+        <div id="projects" class="section"> 
+            <h2>Projects</h2>
+
+            <div id="projects-container"> <!--Þetta div á að geyma öll projectin. Gæti breytt þessu í resume-->
+                <div>
+                    <a href="https://www.visir.is/" target="_blank"><!--Mynd og ef við klikkum á myndina þá förum við inná einhvern hlekk-->
+                        <img class="project-image" src="images/visir.skjaskot.png" alt="Visir.is">
+                        <p class="project-title">Vísir forsíða</p>
+                    </a> 
+                </div>
+
+                
+                <div>
+                    <a href="https://www.mbl.is/fasteignir/" target="_blank"><!--Mynd og ef við klikkum á myndina þá förum við inná einhvern hlekk-->
+                        <img class="project-image" src="images/mbl.png" alt="Mbl fasteignir">
+                        <p class="project-title">Mbl fasteignir</p>
+                    </a> 
+                </div>
+
+                
+                <div>
+                    <a href="http://keldan.is/" target="_blank"><!--Mynd og ef við klikkum á myndina þá förum við inná einhvern hlekk-->
+                        <img class="project-image" src="images/keldan.png" alt="Keldan">
+                        <p class="project-title">Keldan forsíða</p>
+                    </a> 
+                </div>
+
+
+                <div>
+                    <a href="https://www.arionbanki.is/" target="_blank"><!--Mynd og ef við klikkum á myndina þá förum við inná einhvern hlekk-->
+                        <img class="project-image" src="images/arionbanki.png" alt="Arionbanki">
+                        <p class="project-title">Arionbanki forsíða</p>
+                    </a> 
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div id="about" class="section">
+            <h2>About</h2>
+            <img id="author-image" src="images/Mynd_KJ.jpg" alt="Image of the author">
+
+            <p>
+                Hi there! My <span class="emphasis">name</span> is <span class="emphasis">Kári Jón Sigurðsson</span> and I am an aspiring engineer at the age of 24.
+                <br> I'm newly graduated with <span class="emphasis">B.Sc. in Engineering Management.</span>
+                <br> Experienced in project management, highly organized and skilled at overseeing daily milestones. 
+                <span class="emphasis"> <br> Hands-on experience</span> planning, analyzing and implementing assigned projects. 
+
+            </p>
+
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>
+                Feel free to send me an e-mail at 
+                <span class="emphasis"></span><a href="mailto:karis16@ru.is">karis16@ru.is</a> <!--Spanið er bara til að fá litinn á stafinna -->
+            </p>
+
+        </div>
+    
+
+    </main>
+
+    <!-- Menu -->
+    <button id="menu-button" class="fa fa-bars fa-4x" onclick="toogleMenu()"></button> <!--Bý til id, classinn er síðan bara hamborgarmerkið í horninu. toogleMenu er javascript fall sem fer í gang þegar klikkað er á takkan. -->
+    
+    <div id="menu"> <!--Búum til innihaldið í menu bar-->
+        <button class="menu-item" onclick="showHomePage()">Home</button>
+        <button class="menu-item" onclick="showProjectsPage()">Projects</button>
+        <button class="menu-item" onclick="showAboutPage()">About</button>
+        <button class="menu-item" onclick="showContactPage()">Contact</button>
+    </div>
+
+
+    <script src="main.js"></script> <!--Tengjum javascript við html-->
+
+</body>
+</html>

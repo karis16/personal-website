@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    /*Er að breyta Letrinum/stílnum*/
+    font-family: 'Poppins', sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("images/laptop-background.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+
+    color: white;
+}
+
+
+.icon-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+    color: white;
+}
+
+a:hover, .menu-item:hover, #menu-button:hover
+{
+    opacity: 0.7;
+}
+
+.section {
+    padding-left: 10vw;
+    padding-top: 30vh;
+}
+
+#home h1 {
+    font-size: 5rem;
+}
+
+#home p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: rgb(142, 157, 165); /*Litum paragraph með gráum lit(stafina)*/
+}
+
+.emphasis {
+    color: #b66a0c;
+}
+
+button {
+    cursor: pointer; /*Þegar maður hooverar yfir takkan þá kemur hnefi(bendir)*/
+    border: none;
+    outline: inherit;
+    background: transparent;
+    color: inherit;
+}
+
+#menu-button {
+    position: fixed;
+
+    right: 2rem;
+    top: 2rem;
+
+}
+
+#menu {
+    /* Festi þetta á ákveðnum stað, frá toppnum*/
+    position: fixed;
+    top: 30vh;
+    /*Röðum þessu lóðrétt. display none þá erum við að fela þetta og síðan þegar við ýtum á takkan þá kemur þetta. */
+    display: none;
+    flex-direction: column;
+    /*Þekjum alla breyddina*/
+    width: 100vw;
+
+}
+
+/*Ef við erum með class þá punktur*/
+.menu-item {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+
+}
+
+#projects, #about, #contact {
+    display: none; /*Felum projectið á aðal síðunni*/
+}
+
+.project-image {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.project-title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+#author-image {
+    height: 8rem;
+    border-radius: 50%;
+    float: left;
+}
+
+#about p { /*Setjum bakgrunnslit bak við textann*/
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 60%;
+    padding: 1rem;
+    padding-top: 0px;
+
+    border-radius: 1rem;
+
+    background-color: rgba(255,255,255,0.04);
+    margin-left: 0.5rem;
+
+
+}
+
+
+#contact p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #b66a0c;
+}
